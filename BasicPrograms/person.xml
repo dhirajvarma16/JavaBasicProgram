@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="company">
+   <xs:complexType>
+   <xs:sequence>
+     <xs:element ref="companyname"/>
+     <xs:element ref="address"/>
+     <xs:element ref="department"/>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="companyname" type="xs:NCName"/>
+<xs:element name="address" type="xs:NCName"/>
+<xs:element name="department">
+     <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="dname"/>
+            <xs:element ref="depatphoneno"/>
+            <xs:element ref="deptfaxno"/>
+            <xs:element ref="deptemail"/>
+             <xs:element ref="employee"/>
+            <xs:element ref="contractemployee"/>
+         </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="dname" type="xs:NCName"/>
+<xs:element name="deptphoneno" type="xs:integer"/>
+<xs:element name="deptfaxno" type="xs:integer"/>
+<xs:element name="deptemail" type="xs:string"/>
+<xs:element name="employee">
+  <xs:complexType>
+       <xs:sequence>
+       <xs:element ref="empid"/>
+       <xs:element ref="ename"/>
+       <xs:element ref="emailid"/>
+       <xs:element ref="phoneno"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<xs:element name="empid" type="xs:integer"/>
+<xs:element name="ename" type="xs:NCName"/>
+<xs:element name="emailid" type="xs:string"/>
+<xs:element name="contractemployee">
+<xs:complexType>
+   <xs:sequence>
+     <xs:element ref="name"/>
+     <xs:element ref="phoneno"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+<xs:element name="name" type="xs:NCName"/>
+<xs:element name="phoneno" type="xs:integer"/>
+</xs:schema>
+
+       
+
+
+
+
+           
+
+     
